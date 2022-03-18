@@ -46,7 +46,8 @@ services:
       - sub-etha
   # The TestWeave net
   testweave:
-    image: "ghcr.io/demo-hub/testweave-net:latest"
+    # image: "ghcr.io/demo-hub/testweave-net:latest"
+    build: ./docker
     container_name: testweave
     links: 
       - postgres
